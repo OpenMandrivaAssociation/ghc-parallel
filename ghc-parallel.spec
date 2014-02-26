@@ -5,7 +5,7 @@
 Summary:	Haskell parallel library
 Name:		ghc-parallel
 Version:	3.2.0.3
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Other
 Url:		http://hackage.haskell.org/package/%{module}
@@ -14,6 +14,7 @@ Source10:	%{name}.rpmlintrc
 BuildRequires:	ghc-devel
 BuildRequires:	haddock
 BuildRequires:	haskell-macros
+Requires(post,preun):	ghc
 
 %description
 A parallel library for Haskell.
